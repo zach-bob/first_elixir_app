@@ -1,7 +1,7 @@
 # https://elixir-lang.org/getting-started/mix-otp/agent.html
 
 defmodule KV.Bucket do
-  use Agent
+  use Agent, restart: :temporary
 
   @doc """
   Starts a new bucket.
